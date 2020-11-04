@@ -1,0 +1,22 @@
+#https://www.codewars.com/kata/57f7b8271e3d9283300000b4
+
+
+def even_or_odd(s):
+    n = list(s)
+    print(n)
+    n = [int(el) for el in n]
+    print(n)
+    Even = 0
+    Odd = 0
+    for el in n:
+        if el % 2 == 0:
+            Even += el
+        else:
+            Odd += el
+    
+    if Even > Odd:
+        return "Even is greater than Odd"
+    if Odd > Even:
+        return "Odd is greater than Even"
+    if Even == Odd:
+        return "Even and Odd are the same"
