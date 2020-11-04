@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/57a0515f53ba33ac5e000245/train/python
+
+
+def sum_list(lst):
+    return sum(lst) if len(lst) > 0 else 0
