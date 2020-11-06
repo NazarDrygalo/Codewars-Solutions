@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/56a946cd7bd95ccab2000055/train/python
+
+
+def lowercase_count(strng):
+    count = 0
+    for el in strng:
+        if el.islower():
+            count += 1
+    return count
