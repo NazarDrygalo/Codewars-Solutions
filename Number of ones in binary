@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/57bc75378dcd975327000301/train/python
+
+
+def ones(n):
+    return bin(n).count("1")
