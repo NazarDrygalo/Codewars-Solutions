@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/564d0490e96393fc5c000029
+
+
+def coin_combo(cents):
+    s = []
+    quarters = cents // 25
+    dimes = cents % 25 // 10
+    nickles = cents % 25 % 10 // 5
+    cents %= 5
+    return [cents, nickles, dimes, quarters]
