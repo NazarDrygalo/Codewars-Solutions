@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/55d6a0e4ededb894be000005/train/python
+
+
+def encode(string):
+    string = string.lower()
+    al = " abcdefghijklmnopqrstuvwxyz"
+    s = [str(al.index(el)) if el.isalpha() else el for el in string]
+    return "".join(s)
