@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/55d410c492e6ed767000004f/train/python
+
+
+def vowel_2_index(string):
+    n = ""
+    for i in range(len(string)):
+        if string[i] in "eaiouEAIOU":
+            n += str(i + 1)
+        else: 
+            n += string[i]
+    return n
