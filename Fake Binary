@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/57eae65a4321032ce000002d/train/python
+
+
+def fake_bin(x):
+    n = ''
+    for el in x:
+        if el < "5":
+            n += "0"
+        else:
+            n += "1"
+    return n
