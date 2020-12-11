@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/5fc4349ddb878a0017838d0f/train/python
+
+
+def red_knight(n, p):
+    if n == 0 and p % 2 == 0: return 'White', p * 2
+    if n == 0 and p % 2 == 1: return 'Black', p * 2
+    if n == 1 and p % 2 == 1: return 'White', p * 2
+    else: return 'Black', p * 2
