@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/586d12f0aa042830910001d1/train/python
+
+
+def remove_char(arr):
+    dif = []
+    for price in arr:
+        dif.append("$" + "".join([el for el in price if el.isdigit()]))
+    return [el[:-2] + "." + el[-2:] for el in dif]
+    
