@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/578fdcfc75ffd1112c0001a1/train/python
+
+
+def bin_rota(arr):
+    lazy = []
+    for i, name in enumerate(arr):
+        if i % 2 == 0: lazy.extend(name)
+        else: lazy.extend(name[::-1])
+    return lazy
