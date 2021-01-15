@@ -1,0 +1,12 @@
+#https://www.codewars.com/kata/59e77930233243a7b7000026/train/python
+
+
+def amaro_plan(p):
+    coins = p * 20
+    s = (p - 1) // 2
+    arr = [coins - s]
+    for i in range(p - 1):
+        if i % 2 == 0: arr.append(0)
+        else: 
+            arr.append(1)
+    return arr
